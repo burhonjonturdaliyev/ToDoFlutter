@@ -77,11 +77,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
-        title: Text('TO DO'),
+        title: const Text('TO DO'),
         elevation: 0,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
+        // ignore: prefer_const_constructors
         child: Icon(Icons.add),
       ),
       body: ListView.builder(

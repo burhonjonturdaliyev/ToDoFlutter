@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables, must_be_immutable
+
 import 'package:flutter/material.dart';
 
 import 'my_button.dart';
@@ -18,6 +20,7 @@ class DialogBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       backgroundColor: Colors.yellow[300],
+      // ignore: sized_box_for_whitespace
       content: Container(
         height: 120,
         child: Column(
